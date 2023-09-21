@@ -32,21 +32,21 @@ const eqObjects = function(obj1, obj2) {
   const obj2Keys = Object.keys(obj2);
   
   if (obj1Keys.length !==  obj2Keys.length) {
-    return (`🔴🔴🔴 Assertion Failed: ${obj1} !== ${obj2}`);
+    return false;
   }
 
   for (let each1 of obj1Keys) {
     if (obj1[each1] !== obj2[each1]) {// if values are not equal
       if (Array.isArray(obj1[each1])) { // checks to see if any value is an array
         if (eqArrays(obj1[each1], obj2[each1]) === false) { //checks if the arrays match
-          return (`🔴🔴🔴 Assertion Failed: ${obj1} !== ${obj2}`); // if false returns false
+          return false; // if false returns false
         }
       } else {
-        return (`🔴🔴🔴 Assertion Failed: ${obj1} !== ${obj2}`); // if false returns false
+        return false; // if false returns false
       }
   }
 }
-return (`🟢🟢🟢 Assertion Passed: ${obj1} === ${obj2}`);
+return true;
 };
 
 
