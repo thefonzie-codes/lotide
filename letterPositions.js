@@ -13,21 +13,27 @@ const assertEqual = function(actual, expected) {
 const letterPositions = function(string) {
   
   const results = {};
-    for (let i = 0; i < string.length; i++) {
 
-      const char = string[i];
+  for (const i in string) {
+    const char = string[i];
 
-      if (char !== ' ') {
-       if(!results[char]) {
-        results[char] = []
-       }
-       results[char].push(i + 1);
+    if (char === ' ') {
+      continue;
+      }
+
+    if(!results[char]) {
+      results[char] = []
+      }
+
+    results[char].push(i);
     }
-  }
-  return results;
-}
+    return results;
+  };
+
 string = "lighthouse in the house"
 
 console.log(letterPositions(string));
+
+console.log(letterPositions("hello"));
 
 console.log(assertEqual(letterPositions("hello")), { h: [1], e: [2], l:[3, 4], o:[5]});
