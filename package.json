@@ -13,7 +13,10 @@
     "type": "git",
     "url": "git+https://github.com/thefonzie-codes/lotide.git"
   },
-  "author": "",
+  "author": {
+    "name" : "Alfonso Banzon ",
+    "email" : "alfonsobanzon@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/thefonzie-codes/lotide/issues"
