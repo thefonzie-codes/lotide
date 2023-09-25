@@ -37,3 +37,5 @@ console.log(letterPositions(string));
 console.log(letterPositions("hello"));
 
 console.log(assertEqual(letterPositions("hello")), { h: [1], e: [2], l:[3, 4], o:[5]});
+
+module.exports = letterPositions;

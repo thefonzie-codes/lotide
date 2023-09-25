@@ -109,3 +109,5 @@ const mouseObj4 = {
 }
 
 assertObjectsEqual(mouseObj3, mouseObj4);
+
+module.exports = assertObjectsEqual

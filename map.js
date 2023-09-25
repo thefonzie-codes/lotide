@@ -72,3 +72,5 @@ console.log(assertArraysEqual(stringOrNum, [
   'yes is a string',
   '6 is a number'
 ]));
+
+module.exports = map;
