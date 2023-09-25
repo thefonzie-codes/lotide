@@ -1,3 +1,5 @@
+
+
 const findKeyByValue = function(object, valueToFind) {
 
   // iterate through each value
@@ -17,7 +19,7 @@ const bestTVShowsByGenre = {
   drama:  "The Wire"
 };
 
-console.log(assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama"));
-console.log(assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined));
+// console.log(assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama"));
+// console.log(assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined));
 
-module.exports = findKeyByValue;
+// module.exports = findKeyByValue;

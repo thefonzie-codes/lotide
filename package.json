@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@thefonzie-codes/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mini clone of the [Lodash](https://lodash.com) library. This project was created and published by me as part of my learnings at Lighthouse Labs. !!!NOT FOR USE IN PRODUCTION GRADE SOFTWARE!!!",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
